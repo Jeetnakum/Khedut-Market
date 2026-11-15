@@ -1,19 +1,116 @@
-# React + Vite
+# 🌾 કિસાન બજાર (KisanBazaar) - Gujarat E-Mandi Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **ગુજરાત સરકાર APMC સંકલિત ડિજિટલ ઈ-મંડી પોર્ટલ**  
+> ખેડૂતો અને વેપારીઓ (બાયર્સ/મિલો) વચ્ચે સીધા વેચાણ, લાઇવ APMC મંડી ભાવ, ડિજિટલ ખરીદ કરાર અને વાટાઘાટો માટેનું સંપૂર્ણ વેબ પ્લેટફોર્મ.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 🌐 **લાઇવ ડેમો (Live Website):**
+👉 **[https://khedut-market.vercel.app/](https://khedut-market.vercel.app/)**  
+*(કોઈપણ બ્રાઉઝર અથવા મોબાઇલમાં સીધું ઓપન કરી શકો છો)*
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 🚀 મુખ્ય વિશેષતાઓ (Key Features)
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+### ૧. 🌾 ખેડૂત પોર્ટલ (Farmer Portal)
+- **પાક લિસ્ટિંગ & સ્ટોક મેનેજમેન્ટ:** ખેડૂત પોતાના કપાસ, મગફળી, જીરૂ, ઘઉં વગેરે પાક ફોટા, ગુણવત્તા ગ્રેડ અને જથ્થા સાથે લિસ્ટ કરી શકે છે.
+- **૭/૧૨ & ૮-અ જમીન ખરાઈ:** સરકારી e-Dhara રેકોર્ડ ચકાસાયેલ પ્રોફાઇલ.
+- **નજીકના વેપારીઓ (Nearby Traders):** પોતાના તાલુકા અને જિલ્લાના પ્રમાણિત મિલર્સ અને કમિશન એજન્ટોની યાદી.
+- **ખેડૂત ડીલ રૂમ:** વેપારી તરફથી આવતી ઓફર્સ, કાઉન્ટર ઓફર્સ અને સીધો ચેટ સંપર્ક.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ૨. 🏢 વેપારી પોર્ટલ (Vepari / Buyer Portal)
+- **બલ્ક પાક માર્કેટપ્લેસ (`/buyer/browse`):**
+  - ૩૪૮+ સક્રિય બલ્ક પાક લિસ્ટિંગ્સ.
+  - જથ્થા આધારિત ફિલ્ટર્સ (૨૦-૧૦૦ ક્વિન્ટલ, ૧૦૦-૫૦૦ ક્વિન્ટલ, ૫૦૦+ ક્વિન્ટલ).
+  - APMC લેબ ટેસ્ટ સર્ટિફાઇડ અને જિલ્લો મુજબ ફિલ્ટર્સ.
+- **પાક વિગત & લેન્ડેડ કોસ્ટ કેલ્ક્યુલેટર (`/buyer/crop/:id`):**
+  - કપાસ, મગફળી, જીરૂના લેબ મોઇશ્ચર (ભેજ), સ્ટેપલ લંબાઈ (૨૯.૫ mm) ટેસ્ટ રિપોર્ટ્સ.
+  - લાઇવ ફ્રેટ, મંડી સેસ (0.15%), તોલમાપ ચાર્જિસ સાથે **રીઅલ-ટાઇમ નેટ લેન્ડેડ રેટ (₹/મણ)** ગણતરી.
+  - ખેડૂતને સત્તાવાર ઓફર મોકલવાની સુવિધા.
+- **વેપારી ડેશબોર્ડ (`/buyer/dashboard`):**
+  - કંપની પ્રોફાઇલ (શ્રી જીનિંગ એન્ડ પ્રોસેસિંગ ઇન્ડસ્ટ્રીઝ - ગોંડલ).
+  - ૪ મુખ્ય મેટ્રિક્સ: પ્રોક્યોર્ડ વોલ્યુમ (૧૪,૫૦૦ ક્વિન્ટલ), એક્ટિવ ડીલ્સ, સેવ કરેલા પાક, કુલ ખર્ચ (₹૧.૮૫ કરોડ).
+  - સક્રિય નેગોશિયેશન ટેબ્સ અને લાઇવ APMC યાર્ડ રેટ્સ બેન્ચમાર્ક.
+- **સેવ કરેલા પાકની વોચલિસ્ટ (`/buyer/saved`):**
+  - ભાવ ઘટાડા ઇન્સ્ટન્ટ એલર્ટ બેનર (-₹૨૦/મણ ઘટાડો).
+  - કપાસ, જી-૨૦ મગફળી, ઊંઝા જીરૂ, કાળા તલ અને વેચાઈ ગયેલ માલ (Sold Out) સ્ટેટસ.
+  - CSV એક્સપોર્ટ અને સામૂહિક ઓફર (Bulk Bid) મોડલ.
+- **ડીલ રૂમ અને નેગોશિયેશન સેન્ટર (`/buyer/messages`):**
+  - સત્તાવાર ડિજિટલ ખરીદ કરાર (`#APMC-AGR-8812`) અને PDF કોન્ટ્રાક્ટ ડાઉનલોડ.
+  - ૪ તબક્કાની ટાઈમલાઈન: ભાવ સંમતિ ➔ ડીલ કન્ફર્મ ➔ વાહન રવાના & તોલમાપ ➔ RTGS ચૂકવણી.
+  - ૫૦ ટન કમ્પ્યુટરાઇઝ્ડ વેઇટ સ્લિપ અપલોડ મોડલ & RTGS એસ્કો પેમેન્ટ મોડલ.
+  - ક્વોલિટી લેબ ફોટો પ્રિવ્યૂ અને ધર્મકાંટા મેપ લોકેશન સાથે લાઇવ ચેટિંગ.
+- **ખરીદ જરૂરિયાત મૂકો (`/buyer/post-demand`):**
+  - ખેડૂતો માટે ડિમાન્ડ બ્રોડકાસ્ટ (જૂનાગઢ, રાજકોટ, જામનગરના ૨,૮૦૦+ ખેડૂતો સુધી પહોંચ).
+  - **ઇન્ટરેક્ટિવ WhatsApp સ્માર્ટફોન મોકઅપ:** ફોર્મ ભરતા જ જમણી બાજુ WhatsApp મેસેજ રીઅલ-ટાઇમમાં અપડેટ થાય છે!
+- **વેપારી પ્રોફાઇલ & APMC સેટિંગ્સ (`/buyer/profile`):**
+  - APMC લાયસન્સ (`#RJT-421`), GSTIN `24AAACS1234F1Z8`.
+  - યાર્ડ સુવિધાઓ: ૫૦T ધર્મકાંટો, ઇન્સ્ટન્ટ લેબ, રેસ્ટ લાઉન્જ.
+  - ₹૨૫,૦૦,૦૦૦ એસ્કો ડિપોઝિટ ગેરંટી બેલેન્સ & WhatsApp/SMS ઓટો-એલર્ટ ટોગલ્સ.
+
+---
+
+### ૩. 📊 લાઇવ APMC યાર્ડ રેટ્સ (Mandi Prices)
+- ગોંડલ, રાજકોટ, ઊંઝા, અમરેલી, જામનગર અને પાટણ માર્કેટ યાર્ડના તાજા મોડલ ભાવ (₹/મણ).
+- ભાવ વધઘટ (Trending Up / Down) સૂચકાંકો.
+
+---
+
+## 💻 ટેકનોલોજી સ્ટેક (Tech Stack)
+
+| Component | Technology |
+|---|---|
+| **Frontend Framework** | React 19 + Vite 8.3 |
+| **Routing** | React Router v7 (SPA with Multi-role Guard) |
+| **Styling** | Modern CSS3 (Dark Green Agriculture Theme, Glassmorphism, Responsive Grid) |
+| **Data Persistence** | Browser `localStorage` (Offline-capable & Persistent State) |
+| **Notifications** | React Hot Toast |
+| **Backend API (Node.js)** | Express, MongoDB / Mongoose, Socket.io |
+| **Hosting & Deployment** | Vercel (Auto CI/CD from GitHub `main` branch) |
+
+---
+
+## 🛠️ સ્થાનિક રીતે રન કરવા માટે (Local Setup)
+
+```bash
+# ૧. રિપોઝીટરી ક્લોન કરો
+git clone https://github.com/Jeetnakum/Khedut-Market.git
+cd Khedut-Market
+
+# ૨. ડિપેન્ડન્સી ઇન્સ્ટોલ કરો
+npm install
+
+# ૩. ડેવલપમેન્ટ સર્વર શરૂ કરો
+npm run dev
+```
+
+બ્રાઉઝરમાં `http://localhost:5173` ખોલો.
+
+---
+
+## 📱 સ્ક્રીનશોટ્સ અને મુખ્ય પેજીસ (Live Routes)
+
+- **હોમપેજ:** `/`
+- **બજાર પાક માર્કેટપ્લેસ:** `/listings`
+- **મંડી ભાવ (APMC Rates):** `/prices`
+- **ખેડૂત ડેશબોર્ડ:** `/farmer/dashboard`
+- **વેપારી ડેશબોર્ડ:** `/buyer/dashboard`
+- **બલ્ક માર્કેટ:** `/buyer/browse`
+- **પાક ઓફર પેજ:** `/buyer/crop/LOT-KB-9042`
+- **સેવ કરેલા પાક (Watchlist):** `/buyer/saved`
+- **ખેડૂત ડીલ રૂમ (Chat):** `/buyer/messages`
+- **ખરીદ માંગણી પોસ્ટ કરો:** `/buyer/post-demand`
+- **વેપારી પ્રોફાઇલ:** `/buyer/profile`
+
+---
+
+## 👨‍💻 ડેવલપર
+- **જીત નાકુમ (Jeet Nakum)**
+- GitHub: [@Jeetnakum](https://github.com/Jeetnakum)
+- Live App: [https://khedut-market.vercel.app/](https://khedut-market.vercel.app/)
+
+---
+© 2025 ગુજરાત કિસાન બજાર (Gujarat Kisan Bazaar). સર્વાધિકાર સુરક્ષિત. APMC સહાયક પોર્ટલ.

@@ -1,0 +1,624 @@
+/* ============================================================
+   LoginPage.css — PDF 1 Page 6 Exact Design
+   ============================================================ */
+
+.login-pdf1-wrapper {
+  background: #f8fafc;
+  min-height: 100vh;
+  font-family: 'Noto Sans Gujarati', 'Inter', system-ui, sans-serif;
+  color: #1f2937;
+  padding: 30px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.login-pdf1-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.05fr 1.25fr;
+  gap: 30px;
+  align-items: start;
+  width: 100%;
+}
+
+/* ================= LEFT PROMO PANEL ================= */
+.login-pdf1__left {
+  padding: 10px 10px 20px 0;
+}
+
+.lp-gov-pill {
+  display: inline-block;
+  background: #e6f4ea;
+  border: 1px solid #b7dfca;
+  color: #137333;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.lp-heading {
+  font-size: 28px;
+  font-weight: 900;
+  color: #111827;
+  line-height: 1.3;
+  margin: 0 0 10px;
+}
+
+.text-green-brand {
+  color: #15803d;
+}
+
+.lp-subheading {
+  font-size: 13.5px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+
+/* 4 Feature Items */
+.lp-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.lp-feat-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.lp-feat-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  flex-shrink: 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+.lp-feat-title {
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+
+.lp-feat-tag {
+  font-size: 10px;
+  font-weight: 800;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.lp-feat-tag.green { background: #dcfce7; color: #15803d; }
+.lp-feat-tag.blue { background: #e0f2fe; color: #0284c7; }
+.lp-feat-tag.orange { background: #ffedd5; color: #ea580c; }
+
+.lp-feat-desc {
+  font-size: 12px;
+  color: #64748b;
+  line-height: 1.45;
+}
+
+/* Testimonial Box */
+.lp-testi-box {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+}
+
+.lp-testi-stars {
+  color: #f59e0b;
+  font-size: 13px;
+  margin-bottom: 4px;
+  letter-spacing: 2px;
+}
+
+.lp-testi-quote {
+  font-size: 12.5px;
+  font-style: italic;
+  color: #374151;
+  margin: 0 0 6px;
+  line-height: 1.5;
+}
+
+.lp-testi-author {
+  font-size: 11px;
+  font-weight: 700;
+  color: #6b7280;
+}
+
+/* Trust Seals */
+.lp-trust-seals {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #15803d;
+  flex-wrap: wrap;
+}
+
+/* ================= RIGHT FORM PANEL ================= */
+.login-pdf1__right {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 22px 24px 26px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+/* Tabs Bar */
+.lp-tabs-bar {
+  display: flex;
+  background: #f1f5f9;
+  border-radius: 8px;
+  padding: 3px;
+  margin-bottom: 18px;
+}
+
+.lp-tab-btn {
+  flex: 1;
+  padding: 9px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.lp-tab-btn.active {
+  background: #ffffff;
+  color: #111827;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.lp-form-header {
+  margin-bottom: 16px;
+}
+
+.lp-form-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #111827;
+  margin: 0 0 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.free-badge {
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.lp-form-subtitle {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Form Groups */
+.lp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.lp-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.lp-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #374151;
+}
+
+/* Role Cards Grid */
+.lp-role-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.lp-role-card {
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: #ffffff;
+  transition: all 0.15s;
+}
+
+.lp-role-card.selected {
+  border-color: #15803d;
+  background: #f0fdf4;
+}
+
+.role-radio-circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.lp-role-card.selected .role-radio-circle {
+  border-color: #15803d;
+}
+
+.inner-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #15803d;
+}
+
+.role-card-title {
+  font-size: 13px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.role-card-en {
+  font-size: 10.5px;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+.role-card-pill {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.role-card-pill.green { background: #dcfce7; color: #166534; }
+.role-card-pill.blue { background: #e0f2fe; color: #0369a1; }
+
+/* Mobile Input Row */
+.lp-mobile-input-row {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 4px 6px 4px 10px;
+  transition: border-color 0.15s;
+}
+
+.lp-mobile-input-row:focus-within {
+  border-color: #15803d;
+  box-shadow: 0 0 0 2px rgba(21, 128, 61, 0.1);
+}
+
+.country-prefix {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #374151;
+  margin-right: 8px;
+  padding-right: 8px;
+  border-right: 1px solid #d1d5db;
+}
+
+.lp-mobile-field {
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  width: 100%;
+  outline: none;
+}
+
+.lp-send-otp-btn {
+  background: #ea580c;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.lp-send-otp-btn:hover { background: #c2410c; }
+
+.lp-field-note {
+  font-size: 11px;
+  color: #64748b;
+}
+
+/* OTP Verification */
+.otp-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.otp-timer {
+  font-size: 11px;
+  color: #dc2626;
+  font-weight: 700;
+}
+
+.otp-boxes-container {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+  margin: 4px 0;
+}
+
+.otp-box-input {
+  width: 44px;
+  height: 46px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  color: #111827;
+  outline: none;
+  background: #f8fafc;
+}
+
+.otp-box-input:focus {
+  border-color: #15803d;
+  background: #ffffff;
+}
+
+.otp-feedback-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11.5px;
+}
+
+.otp-verified-check {
+  color: #15803d;
+  font-weight: 700;
+}
+
+.otp-resend-btn {
+  background: none;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  font-size: 11px;
+}
+
+.otp-resend-btn:hover { color: #111827; }
+
+/* Full name */
+.lp-input-with-icon {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 7px 10px;
+}
+
+.lp-input-with-icon:focus-within {
+  border-color: #15803d;
+}
+
+.input-icon {
+  font-size: 14px;
+  margin-right: 8px;
+  color: #9ca3af;
+}
+
+.lp-text-field {
+  border: none;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+  outline: none;
+}
+
+/* Location 3-Grid */
+.location-3grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+.sub-label {
+  font-size: 10.5px;
+  color: #6b7280;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.lp-select-field,
+.lp-village-field {
+  width: 100%;
+  padding: 7px 8px;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #111827;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.lp-select-field:focus,
+.lp-village-field:focus {
+  border-color: #15803d;
+}
+
+/* Primary Crops Grid */
+.crops-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.multi-note {
+  font-size: 10.5px;
+  color: #64748b;
+}
+
+.crops-checks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.crop-check-tile {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.crop-check-tile.checked {
+  border-color: #15803d;
+  background: #f0fdf4;
+  color: #15803d;
+}
+
+.crop-check-tile input {
+  accent-color: #15803d;
+}
+
+/* Terms Checkbox */
+.terms-checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 11.5px;
+  color: #4b5563;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.terms-checkbox-label input {
+  margin-top: 2px;
+  accent-color: #15803d;
+}
+
+.terms-checkbox-label a {
+  color: #15803d;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Submit Button */
+.lp-submit-button {
+  background: #15803d;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 13.5px;
+  font-weight: 800;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 6px;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.lp-submit-button:hover:not(:disabled) {
+  background: #166534;
+  transform: translateY(-1px);
+}
+
+.lp-submit-button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+/* Switch Link */
+.lp-switch-row {
+  text-align: center;
+  margin-top: 4px;
+}
+
+.lp-switch-btn {
+  background: none;
+  border: none;
+  color: #15803d;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.lp-switch-btn:hover {
+  color: #166534;
+}
+
+/* Bottom Security Bar */
+.lp-bottom-security-bar {
+  max-width: 1140px;
+  margin: 30px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 12px;
+  color: #64748b;
+  padding-top: 14px;
+  border-top: 1px solid #e5e7eb;
+}
+
+@media (max-width: 860px) {
+  .login-pdf1-container {
+    grid-template-columns: 1fr;
+  }
+  .crops-checks-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

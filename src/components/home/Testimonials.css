@@ -1,0 +1,106 @@
+/* ============================================================
+   Testimonials.css — PDF 1 Page 1 Exact Design
+   ============================================================ */
+
+.testimonials-pdf1 {
+  background: #ffffff;
+  padding: 56px 20px 60px;
+}
+
+.testimonials-pdf1__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials-pdf1__header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.testimonials-pdf1__badge {
+  font-size: 12px;
+  font-weight: 700;
+  color: #15803d;
+  margin-bottom: 6px;
+}
+
+.testimonials-pdf1__title {
+  font-size: 26px;
+  font-weight: 800;
+  color: #111827;
+  margin: 0 0 8px;
+}
+
+.testimonials-pdf1__sub {
+  font-size: 14px;
+  color: #6b7280;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.testimonials-pdf1__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.testi-pdf1-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.testi-pdf1-stars {
+  color: #f59e0b;
+  font-size: 17px;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+}
+
+.testi-pdf1-text {
+  font-size: 13px;
+  color: #374151;
+  line-height: 1.6;
+  font-style: italic;
+  margin: 0 0 20px;
+  flex: 1;
+}
+
+.testi-pdf1-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.testi-pdf1-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #15803d;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testi-pdf1-name {
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.testi-pdf1-role {
+  font-size: 11.5px;
+  color: #6b7280;
+}
+
+@media (max-width: 860px) {
+  .testimonials-pdf1__grid {
+    grid-template-columns: 1fr;
+  }
+}

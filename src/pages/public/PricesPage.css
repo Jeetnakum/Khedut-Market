@@ -1,0 +1,571 @@
+/* ============================================================
+   PricesPage.css — PDF 1 Page 4 Exact Design
+   ============================================================ */
+
+.prices-pdf1-wrapper {
+  background: #f8fafc;
+  min-height: 100vh;
+  font-family: 'Noto Sans Gujarati', 'Inter', system-ui, sans-serif;
+  color: #1f2937;
+  padding-bottom: 60px;
+}
+
+/* Header Section */
+.pp-header-section {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 24px 0;
+}
+
+.pp-header-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.pp-badge {
+  font-size: 12px;
+  font-weight: 700;
+  color: #15803d;
+  margin-bottom: 4px;
+}
+
+.pp-main-heading {
+  font-size: 24px;
+  font-weight: 800;
+  color: #111827;
+  margin: 0 0 4px;
+}
+
+.pp-sub-heading {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.pp-header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.pp-btn-wa {
+  background: #25d366;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pp-btn-export {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  color: #374151;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Container */
+.pp-container {
+  max-width: 1240px;
+  margin: 20px auto 0;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 2. Filter Bar Card */
+.pp-filter-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  flex-wrap: wrap;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.pp-filter-col {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pp-filter-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #374151;
+}
+
+.pp-select,
+.pp-date-input {
+  width: 100%;
+  padding: 9px 12px;
+  background: #f9fafb;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1f2937;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.pp-filter-submit-btn {
+  background: #15803d;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
+  height: 40px;
+  white-space: nowrap;
+}
+
+/* 3. Top Mandi Highlights */
+.pp-highlights-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pp-sec-head-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pp-sec-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.pp-sec-meta {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.pp-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.pp-hl-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.pp-hl-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.pp-hl-apmc {
+  font-size: 12px;
+  font-weight: 700;
+  color: #6b7280;
+}
+
+.pp-hl-tag {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.pp-hl-tag.tag-up {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.pp-hl-tag.tag-neutral {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.pp-hl-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #111827;
+  margin: 0 0 12px;
+}
+
+.pp-hl-data-row {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #f3f4f6;
+  padding-top: 10px;
+}
+
+.hl-label {
+  font-size: 10.5px;
+  color: #6b7280;
+  display: block;
+}
+
+.hl-val-price {
+  font-size: 15px;
+  font-weight: 800;
+  color: #15803d;
+}
+
+.hl-val-arr {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* 4. 7-Day Price Movement Chart */
+.pp-chart-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px 22px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.pp-chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.pp-chart-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #111827;
+  margin: 0 0 4px;
+}
+
+.pp-chart-sub {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.pp-chart-stats {
+  display: flex;
+  gap: 16px;
+}
+
+.pp-chart-stat-item {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 6px 12px;
+  text-align: right;
+}
+
+.cs-label {
+  font-size: 10px;
+  color: #64748b;
+  display: block;
+}
+
+.cs-val {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.cs-val.text-green {
+  color: #15803d;
+}
+
+.cs-val.text-red {
+  color: #dc2626;
+}
+
+.cs-val.text-blue {
+  color: #0284c7;
+}
+
+/* 5. Daily Mandi Rate Sheet (Table) */
+.pp-table-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px 22px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.pp-table-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pp-table-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #111827;
+  margin: 0 0 2px;
+}
+
+.pp-table-sub {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.pp-verified-tag {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #15803d;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.pp-table-wrap {
+  overflow-x: auto;
+}
+
+.pp-rates-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+
+.pp-rates-table th {
+  background: #f8fafc;
+  color: #475569;
+  font-weight: 700;
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 2px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.pp-rates-table td {
+  padding: 11px 12px;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+.pp-rates-table tr:hover {
+  background: #fafaf9;
+}
+
+.cell-apmc {
+  font-weight: 700;
+  color: #1e293b;
+  white-space: nowrap;
+}
+
+.crop-title-bold {
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 2px;
+}
+
+.grade-tag {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.badge-a {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badge-aplus {
+  background: #fef08a;
+  color: #854d0e;
+}
+
+.badge-b {
+  background: #fed7aa;
+  color: #9a3412;
+}
+
+.badge-c {
+  background: #e2e8f0;
+  color: #475569;
+}
+
+.cell-arrival {
+  font-weight: 600;
+  color: #475569;
+}
+
+.cell-price {
+  font-weight: 600;
+  color: #334155;
+}
+
+.cell-modal {
+  font-size: 14px;
+  font-weight: 900;
+  color: #15803d;
+}
+
+.trend-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.trend-badge.up {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.trend-badge.down {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.trend-badge.neutral {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.pp-row-link {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* Table Footer */
+.pp-table-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #f1f5f9;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.pp-table-summary {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.pp-pagination {
+  display: flex;
+  gap: 4px;
+}
+
+.pp-pg-btn,
+.pp-pg-num {
+  padding: 5px 10px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+  cursor: pointer;
+}
+
+.pp-pg-num.active {
+  background: #15803d;
+  color: #ffffff;
+  border-color: #15803d;
+}
+
+/* 6. Callout Card */
+.pp-callout-card {
+  background: #14532d;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 24px 28px;
+}
+
+.pp-callout-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.callout-tag {
+  background: #15803d;
+  color: #bbf7d0;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.callout-title {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0 0 6px;
+}
+
+.callout-desc {
+  font-size: 13px;
+  color: #bbf7d0;
+  margin: 0;
+  max-width: 600px;
+}
+
+.callout-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.callout-btn-orange {
+  background: #ea580c;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 13.5px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.callout-btn-outline {
+  background: #ffffff;
+  color: #14532d;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 13.5px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .pp-highlights-grid {
+    grid-template-columns: 1fr;
+  }
+}

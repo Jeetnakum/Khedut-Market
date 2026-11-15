@@ -1,0 +1,857 @@
+/* ========================================================
+   TRADER PROFILE & BUYING DEMANDS STYLES (MATCHING FARMER_PAGE_6.JPG)
+   ======================================================== */
+
+.trader-profile-page {
+  background: #f8fafc;
+  min-height: 100vh;
+  padding: 16px 0 60px 0;
+  color: #1e293b;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.tp-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Top Nav Bar */
+.tp-top-nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.tp-back-link {
+  color: #15803d;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.tp-zone-pill {
+  font-size: 12px;
+  color: #64748b;
+  background: #ffffff;
+  padding: 4px 12px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Trader Profile Header Card */
+.tp-header-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  padding: 24px 28px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.tp-hc-top-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.tp-hc-identity {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.tp-factory-avatar {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  background: #f0fdf4;
+  border: 2px solid #86efac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  flex-shrink: 0;
+}
+
+.fa-online-dot {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 14px;
+  height: 14px;
+  background: #22c55e;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.tp-trader-name {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 2px 0;
+}
+
+.tp-trader-sub {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.tp-owner-strip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  color: #475569;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.tp-dot-sep {
+  color: #cbd5e1;
+}
+
+.tp-online-status {
+  color: #15803d;
+  font-weight: 600;
+}
+
+.tp-cert-badges-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.cert-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.cert-badge.govt {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.cert-badge.protect {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde68a;
+}
+
+.tp-rating-line {
+  font-size: 12.5px;
+  color: #475569;
+}
+
+.stars-val {
+  color: #ca8a04;
+  font-weight: 800;
+  margin-right: 6px;
+}
+
+/* Header CTAs */
+.tp-hc-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.tp-btn-direct-call {
+  background: #15803d;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13.5px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(21, 128, 61, 0.25);
+  transition: all 0.15s ease;
+}
+
+.tp-btn-direct-call:hover {
+  background: #166534;
+}
+
+.tp-btn-send-deal {
+  background: #ea580c;
+  color: #ffffff;
+  border: none;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(234, 88, 12, 0.25);
+  transition: all 0.15s ease;
+}
+
+.tp-btn-send-deal:hover {
+  background: #c2410c;
+}
+
+/* 4 Metrics Grid */
+.tp-stats-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding-top: 18px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.tp-metric-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.m-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.m-icon.green { background: #dcfce7; color: #15803d; }
+.m-icon.blue { background: #e0f2fe; color: #0284c7; }
+.m-icon.purple { background: #f3e8ff; color: #9333ea; }
+.m-icon.orange { background: #ffedd5; color: #ea580c; }
+
+.m-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.m-num {
+  font-size: 17px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.m-lbl {
+  font-size: 11px;
+  color: #64748b;
+}
+
+/* 2-Column Grid */
+.tp-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 390px;
+  gap: 24px;
+  align-items: start;
+}
+
+.tp-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.tp-card-header {
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f1f5f9;
+  background: #f8fafc;
+}
+
+.ch-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ch-icon {
+  font-size: 18px;
+}
+
+.ch-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.tp-sector-tag {
+  background: #e2e8f0;
+  color: #475569;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.tp-live-buying-pill {
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.tp-card-body {
+  padding: 20px;
+}
+
+/* Office Address Banner */
+.tp-office-address-banner {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.oa-icon {
+  font-size: 24px;
+}
+
+.oa-info {
+  flex: 1;
+}
+
+.oa-info strong {
+  display: block;
+  font-size: 13px;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.oa-text {
+  font-size: 13px;
+  color: #334155;
+  margin: 0 0 4px 0;
+  line-height: 1.4;
+}
+
+.oa-landmark {
+  font-size: 11.5px;
+  color: #64748b;
+  display: block;
+}
+
+.oa-btn-map {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #0284c7;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Yard Facilities Tiles */
+.tp-facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.tp-fac-tile {
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fac-icon {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.fac-title {
+  font-size: 13px;
+  color: #0f172a;
+}
+
+.fac-sub {
+  font-size: 10.5px;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.fac-desc {
+  font-size: 11.5px;
+  color: #475569;
+  line-height: 1.4;
+  margin: 0 0 10px 0;
+  flex: 1;
+}
+
+.fac-tag {
+  font-size: 10.5px;
+  color: #15803d;
+  font-weight: 700;
+  background: #f0fdf4;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Currently Buying Commodities */
+.tp-commodities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tp-comm-card {
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  transition: all 0.15s ease;
+}
+
+.tp-comm-card:hover {
+  border-color: #86efac;
+}
+
+.comm-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.comm-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: #f0fdf4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.comm-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+}
+
+.comm-name {
+  font-size: 16px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.comm-sub-txt {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.comm-grade-tag {
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.comm-specs-row {
+  font-size: 12px;
+  color: #475569;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.comm-dot {
+  color: #cbd5e1;
+}
+
+.comm-payment-hint {
+  font-size: 12px;
+  color: #15803d;
+  font-weight: 700;
+}
+
+.comm-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.comm-price-label {
+  font-size: 11px;
+  color: #64748b;
+}
+
+.comm-price-val {
+  font-size: 18px;
+  font-weight: 800;
+  color: #15803d;
+}
+
+.mound-txt {
+  font-size: 11px;
+  color: #64748b;
+  font-weight: normal;
+}
+
+.btn-offer-commodity {
+  background: #15803d;
+  color: #ffffff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+/* Reviews List */
+.btn-all-reviews {
+  background: none;
+  border: none;
+  color: #15803d;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tp-reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tp-review-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.ri-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 13px;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.ri-avatar.rp { background: #15803d; }
+.ri-avatar.kc { background: #0284c7; }
+
+.ri-content {
+  flex: 1;
+}
+
+.ri-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ri-name {
+  font-size: 13.5px;
+  color: #0f172a;
+}
+
+.ri-loc {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.ri-sold-tag {
+  display: block;
+  font-size: 11px;
+  color: #047857;
+  font-weight: 600;
+}
+
+.ri-stars {
+  color: #ca8a04;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.ri-comment {
+  font-size: 12.5px;
+  color: #334155;
+  line-height: 1.5;
+  margin: 0 0 6px 0;
+}
+
+.ri-date {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+/* Sidebar: Escrow Card */
+.tp-escrow-card {
+  border: 1.5px solid #86efac;
+  background: #ffffff;
+}
+
+.tp-escrow-head {
+  padding: 14px 18px;
+  background: #f0fdf4;
+  border-bottom: 1px solid #bbf7d0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.esc-shield-icon {
+  font-size: 22px;
+}
+
+.esc-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: #166534;
+  margin: 0;
+}
+
+.esc-sub {
+  font-size: 10.5px;
+  color: #15803d;
+}
+
+.esc-gov-tag {
+  margin-left: auto;
+  background: #15803d;
+  color: #ffffff;
+  font-size: 9.5px;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.tp-escrow-body {
+  padding: 16px 18px;
+}
+
+.esc-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12px;
+  color: #334155;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.ep-tick {
+  color: #15803d;
+  font-weight: 900;
+}
+
+.esc-cert-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0;
+}
+
+.ecb-check {
+  font-size: 18px;
+  color: #15803d;
+}
+
+.esc-cert-box strong {
+  display: block;
+  font-size: 11.5px;
+  color: #0f172a;
+}
+
+.ecb-sub {
+  font-size: 10px;
+  color: #64748b;
+}
+
+.esc-help-row {
+  font-size: 11.5px;
+  color: #047857;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 8px;
+  border-top: 1px solid #f1f5f9;
+}
+
+/* Direct Deal Form Card */
+.tp-deal-form-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #f1f5f9;
+  background: #f8fafc;
+}
+
+.df-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 4px 0;
+}
+
+.df-sub {
+  font-size: 12px;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.tp-deal-form-body {
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.df-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.df-group label {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #334155;
+}
+
+.df-input, .df-select {
+  padding: 9px 12px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 13.5px;
+  color: #0f172a;
+  background: #ffffff;
+  outline: none;
+}
+
+.df-input:focus, .df-select:focus {
+  border-color: #15803d;
+}
+
+.df-btn-submit {
+  background: #15803d;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13.5px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(21, 128, 61, 0.25);
+  margin-top: 4px;
+  transition: all 0.15s ease;
+}
+
+.df-btn-submit:hover {
+  background: #166534;
+}
+
+/* Yard Operating Hours Card */
+.tp-yard-hours-card {
+  padding: 16px 18px;
+}
+
+.yh-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.yh-title {
+  font-size: 13px;
+  color: #0f172a;
+}
+
+.yh-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.yh-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.yh-row span {
+  color: #64748b;
+}
+
+.yh-row strong {
+  color: #0f172a;
+}
+
+.yh-sub {
+  color: #ea580c;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .tp-content-grid {
+    grid-template-columns: 1fr;
+  }
+  .tp-stats-metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tp-facilities-grid {
+    grid-template-columns: 1fr;
+  }
+}

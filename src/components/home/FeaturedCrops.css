@@ -1,0 +1,223 @@
+/* ============================================================
+   FeaturedCrops.css — PDF 1 Page 1 Exact Design
+   ============================================================ */
+
+.featured-pdf1 {
+  background: #ffffff;
+  padding: 50px 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.featured-pdf1__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featured-pdf1__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 26px;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.featured-pdf1__badge {
+  font-size: 12px;
+  font-weight: 700;
+  color: #15803d;
+  margin-bottom: 4px;
+}
+
+.featured-pdf1__title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #111827;
+  margin: 0 0 6px;
+}
+
+.featured-pdf1__sub {
+  font-size: 13.5px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.featured-pdf1__view-all {
+  color: #15803d;
+  font-weight: 700;
+  font-size: 13.5px;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.featured-pdf1__view-all:hover {
+  text-decoration: underline;
+  color: #166534;
+}
+
+/* 4-Cards Grid */
+.featured-pdf1__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.fc-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.fc-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  border-color: #86efac;
+}
+
+.fc-card__image-wrap {
+  position: relative;
+  height: 155px;
+  width: 100%;
+  overflow: hidden;
+  background: #f1f5f9;
+}
+
+.fc-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fc-card__badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #15803d;
+  font-size: 10.5px;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+.fc-card__qty-pill {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.fc-card__body {
+  padding: 12px 14px 14px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.fc-card__title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #111827;
+  margin: 0 0 4px;
+}
+
+.fc-card__location {
+  font-size: 11.5px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.fc-card__farmer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f3f4f6;
+  margin-bottom: 10px;
+}
+
+.fc-card__farmer-name {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.fc-card__verified-badge {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #15803d;
+  background: #f0fdf4;
+  padding: 1px 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.fc-card__price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.fc-card__price-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.fc-card__price-label {
+  font-size: 10px;
+  color: #6b7280;
+}
+
+.fc-card__price {
+  font-size: 18px;
+  font-weight: 900;
+  color: #15803d;
+}
+
+.fc-card__price-unit {
+  font-size: 11.5px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.fc-card__detail-btn {
+  background: #15803d;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: background 0.15s;
+}
+
+.fc-card__detail-btn:hover {
+  background: #166534;
+}
+
+@media (max-width: 1024px) {
+  .featured-pdf1__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .featured-pdf1__grid {
+    grid-template-columns: 1fr;
+  }
+}

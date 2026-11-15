@@ -1,0 +1,1009 @@
+/* ========================================================
+   FARMER DASHBOARD STYLES (MATCHING FARMER_PAGE_2.JPG)
+   ======================================================== */
+
+.farmer-dash-page {
+  background: #f8fafc;
+  min-height: 100vh;
+  padding: 24px 0 60px 0;
+  color: #1e293b;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.fd-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* 1. Welcome Card */
+.fd-welcome-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  padding: 24px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  flex-wrap: wrap;
+}
+
+.fd-verified-badge {
+  display: inline-block;
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 12px;
+  border-radius: 20px;
+  border: 1px solid #86efac;
+  margin-bottom: 6px;
+}
+
+.fd-welcome-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 4px 0;
+}
+
+.fd-welcome-sub {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0;
+}
+
+.fd-welcome-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.fd-btn-action {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.fd-btn-action.primary {
+  background: #15803d;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 2px 6px rgba(21, 128, 61, 0.25);
+}
+
+.fd-btn-action.primary:hover {
+  background: #166534;
+}
+
+.fd-btn-action.outline {
+  background: #ffffff;
+  border: 1.5px solid #cbd5e1;
+  color: #334155;
+}
+
+.fd-btn-action.outline:hover {
+  border-color: #15803d;
+  color: #15803d;
+  background: #f0fdf4;
+}
+
+.fd-orange-bubble {
+  background: #ea580c;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 1px 6px;
+  border-radius: 10px;
+  margin-left: 2px;
+}
+
+/* 2. Top Stats Grid */
+.fd-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.fd-stat-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  padding: 18px 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+.fd-stat-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.fd-stat-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.green-bg { background: #dcfce7; color: #15803d; }
+.blue-bg { background: #e0f2fe; color: #0284c7; }
+.orange-bg { background: #ffedd5; color: #ea580c; }
+.teal-bg { background: #ccfbf1; color: #0d9488; }
+
+.fd-stat-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.fd-stat-badge.green { background: #dcfce7; color: #15803d; }
+.fd-stat-badge.blue { background: #e0f2fe; color: #0284c7; }
+.fd-stat-badge.orange { background: #fee2e2; color: #dc2626; }
+.fd-stat-badge.teal { background: #f1f5f9; color: #475569; }
+
+.fd-stat-label {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.fd-stat-main-val {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.fd-stat-sub-val {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.fd-stat-gain {
+  font-size: 12px;
+  color: #15803d;
+  font-weight: 700;
+}
+
+.fd-stat-footer-text {
+  font-size: 11.5px;
+  color: #94a3b8;
+  margin-top: auto;
+}
+
+/* 3. Main 2-Column Split */
+.fd-main-grid {
+  display: grid;
+  grid-template-columns: 1fr 390px;
+  gap: 24px;
+  margin-bottom: 24px;
+  align-items: start;
+}
+
+.fd-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  overflow: hidden;
+}
+
+/* Card Header */
+.fd-card-header {
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.fd-ch-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fd-ch-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.fd-active-count-tag {
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.fd-ch-tools {
+  display: flex;
+  gap: 8px;
+}
+
+.fd-tool-btn {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  color: #475569;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Crops List */
+.fd-crops-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.fd-crop-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-bottom: 1px solid #f1f5f9;
+  transition: background 0.15s ease;
+}
+
+.fd-crop-item:hover {
+  background: #f8fafc;
+}
+
+.fd-ci-img-wrap {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f1f5f9;
+  flex-shrink: 0;
+}
+
+.fd-ci-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fd-ci-grade {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background: #15803d;
+  color: #ffffff;
+  font-size: 9.5px;
+  font-weight: 800;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.fd-ci-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.fd-ci-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.fd-ci-name {
+  font-size: 15px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.fd-ci-lot {
+  font-size: 11px;
+  font-weight: 700;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.fd-ci-meta-row {
+  font-size: 12px;
+  color: #475569;
+  margin-bottom: 8px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.ci-meta-sep {
+  color: #cbd5e1;
+}
+
+.fd-ci-price-strip {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #f8fafc;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #f1f5f9;
+}
+
+.ci-ps-label {
+  font-size: 11px;
+  color: #64748b;
+  margin-right: 4px;
+}
+
+.ci-ps-val {
+  font-size: 14px;
+  color: #15803d;
+  font-weight: 800;
+}
+
+.ci-unit {
+  font-size: 11px;
+  color: #64748b;
+  font-weight: normal;
+}
+
+.ci-ps-apmc {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #0369a1;
+}
+
+.fd-ci-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.fd-ci-btn-offer {
+  background: #15803d;
+  color: #ffffff;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.fd-ci-btn-offer:hover {
+  background: #166534;
+}
+
+.fd-ci-btn-manage {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.fd-ci-btn-manage:hover {
+  background: #f1f5f9;
+}
+
+/* Card Footer */
+.fd-card-footer {
+  padding: 12px 20px;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #f1f5f9;
+}
+
+.fd-footer-meta {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.fd-footer-link {
+  font-size: 12.5px;
+  color: #15803d;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Sidebar: APMC Card */
+.fd-mandi-card {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.fd-mandi-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.fd-mh-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fd-live-radar {
+  color: #ea580c;
+  font-size: 16px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+.fd-mh-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.fd-today-badge {
+  font-size: 11px;
+  background: #f1f5f9;
+  color: #475569;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.fd-mandi-district {
+  font-size: 11.5px;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+.fd-mandi-alert {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #166534;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.fd-mandi-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.fd-mt-head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #64748b;
+  font-weight: 700;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 8px;
+}
+
+.fd-mt-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.fd-mt-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.crop-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.crop-dot.green { background: #15803d; }
+.crop-dot.orange { background: #ea580c; }
+.crop-dot.yellow { background: #ca8a04; }
+.crop-dot.purple { background: #9333ea; }
+
+.crop-mandi-sub {
+  display: block;
+  font-size: 10.5px;
+  color: #64748b;
+  font-weight: normal;
+}
+
+.fd-mt-price {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.rate-up {
+  color: #15803d;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.rate-down {
+  color: #dc2626;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.rate-steady {
+  color: #64748b;
+  font-size: 11px;
+}
+
+.fd-mandi-more-link {
+  display: block;
+  margin-top: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #15803d;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Advisor Card */
+.fd-advisor-card {
+  padding: 18px 20px;
+  background: #f0fdf4;
+  border: 1.5px solid #86efac;
+}
+
+.fd-advisor-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.adv-icon {
+  font-size: 18px;
+  color: #15803d;
+}
+
+.adv-title {
+  font-size: 12.5px;
+  font-weight: 800;
+  color: #166534;
+}
+
+.fd-advisor-body {
+  font-size: 12.5px;
+  color: #1e293b;
+  line-height: 1.5;
+  margin: 0 0 12px 0;
+}
+
+.fd-advisor-cta {
+  display: block;
+  background: #15803d;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 7px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* 4. Recent Deals Bottom Section */
+.fd-deals-card {
+  padding: 24px;
+}
+
+.fd-deals-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.fd-dh-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.fd-dh-icon {
+  font-size: 26px;
+}
+
+.fd-dh-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.fd-dh-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.fd-dh-badge.orange {
+  background: #ffedd5;
+  color: #c2410c;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.fd-dh-sub {
+  font-size: 13px;
+  color: #64748b;
+  margin: 0;
+}
+
+.fd-dh-rule-notice {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  color: #92400e;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+/* 3 Deals Cards Grid */
+.fd-deals-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.fd-deal-box {
+  background: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.15s ease;
+}
+
+.fd-deal-box:hover {
+  border-color: #86efac;
+}
+
+.fd-deal-box.accepted {
+  border-color: #15803d;
+  background: #f0fdf4;
+}
+
+.deal-box-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.deal-trader-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.trader-avatar-tag {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background: #15803d;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trader-name {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.v-tick {
+  color: #15803d;
+  font-size: 12px;
+}
+
+.trader-addr {
+  font-size: 11px;
+  color: #64748b;
+}
+
+.deal-time {
+  font-size: 10.5px;
+  color: #94a3b8;
+  white-space: nowrap;
+}
+
+.deal-metrics-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+  font-size: 12.5px;
+}
+
+.dm-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dm-label {
+  color: #64748b;
+}
+
+.dm-val {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.target-row {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 11.5px;
+  font-weight: 700;
+}
+
+.deal-msg-box {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 8px 10px;
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.quote-sym {
+  font-size: 13px;
+  color: #15803d;
+}
+
+.deal-msg-text {
+  font-size: 11.5px;
+  color: #334155;
+  font-style: italic;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.deal-actions-row {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.deal-btn-accept {
+  flex: 1;
+  background: #15803d;
+  color: #ffffff;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.deal-btn-accept:hover {
+  background: #166534;
+}
+
+.deal-btn-counter {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.deal-btn-chat {
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  color: #1e293b;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.deal-accepted-pill {
+  width: 100%;
+  text-align: center;
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #86efac;
+}
+
+/* Bottom Security Footer */
+.fd-deals-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  border-top: 1px solid #f1f5f9;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.df-secure-text {
+  font-size: 12.5px;
+  color: #047857;
+  font-weight: 600;
+}
+
+.df-all-deals-link {
+  font-size: 13px;
+  color: #15803d;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Modal */
+.fd-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.6);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.fd-modal-content {
+  background: #ffffff;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.fd-mc-header {
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.fd-mc-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.fd-mc-close {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #64748b;
+}
+
+.fd-mc-body {
+  padding: 20px;
+}
+
+.fd-modal-offer-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8fafc;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  margin-top: 12px;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .fd-main-grid {
+    grid-template-columns: 1fr;
+  }
+  .fd-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .fd-deals-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .fd-stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .fd-crop-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .fd-ci-img-wrap {
+    width: 100%;
+    height: 140px;
+  }
+  .fd-ci-actions {
+    width: 100%;
+    flex-direction: row;
+  }
+  .fd-ci-btn-offer, .fd-ci-btn-manage {
+    flex: 1;
+    text-align: center;
+  }
+}

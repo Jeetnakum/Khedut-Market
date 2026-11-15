@@ -1,0 +1,403 @@
+/* ============================================================
+   AboutPage.css — PDF 1 Page 5 Exact Design
+   ============================================================ */
+
+.about-pdf1-wrapper {
+  background: #f8fafc;
+  min-height: 100vh;
+  font-family: 'Noto Sans Gujarati', 'Inter', system-ui, sans-serif;
+  color: #1f2937;
+  padding-bottom: 60px;
+}
+
+/* 1. Hero Section */
+.ap-hero-section {
+  background: linear-gradient(180deg, #ecfdf5 0%, #f8fafc 100%);
+  padding: 48px 20px 40px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.ap-hero-inner {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.ap-hero-pill {
+  display: inline-block;
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 12.5px;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+  border: 1px solid #bbf7d0;
+}
+
+.ap-hero-title {
+  font-size: 32px;
+  font-weight: 900;
+  color: #111827;
+  margin: 0 0 12px;
+  line-height: 1.3;
+}
+
+.ap-hero-desc {
+  font-size: 15px;
+  color: #4b5563;
+  max-width: 680px;
+  margin: 0 auto 32px;
+  line-height: 1.6;
+}
+
+/* Stats 4-Grid */
+.ap-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.ap-stat-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.ap-stat-val {
+  font-size: 24px;
+  font-weight: 900;
+  color: #15803d;
+  margin-bottom: 4px;
+}
+
+.ap-stat-label {
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 2px;
+}
+
+.ap-stat-sub {
+  font-size: 10.5px;
+  color: #64748b;
+}
+
+/* Sections Common */
+.ap-section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 20px 0;
+}
+
+.ap-section-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.ap-pre-title {
+  font-size: 11.5px;
+  font-weight: 800;
+  color: #15803d;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.ap-section-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #111827;
+  margin: 0 0 8px;
+}
+
+.ap-section-desc {
+  font-size: 13.5px;
+  color: #4b5563;
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* 2. Helpline Grid */
+.ap-helpline-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.ap-hl-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 22px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.ap-hl-tag {
+  font-size: 10.5px;
+  font-weight: 800;
+  color: #15803d;
+  background: #f0fdf4;
+  padding: 2px 7px;
+  border-radius: 4px;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+.ap-hl-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #111827;
+  margin: 0 0 4px;
+}
+
+.ap-hl-contact {
+  font-size: 20px;
+  font-weight: 900;
+  color: #15803d;
+  margin-bottom: 4px;
+}
+
+.ap-hl-sub {
+  font-size: 11.5px;
+  color: #6b7280;
+  margin: 0 0 14px;
+}
+
+.ap-hl-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+  font-size: 12px;
+  color: #4b5563;
+  line-height: 1.45;
+  flex: 1;
+}
+
+.ap-hl-btn {
+  display: block;
+  text-align: center;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+
+.ap-hl-btn.btn-green {
+  background: #15803d;
+  color: #ffffff;
+}
+
+.ap-hl-btn.btn-green:hover {
+  background: #166534;
+}
+
+.ap-hl-btn.btn-whatsapp {
+  background: #25d366;
+  color: #ffffff;
+}
+
+.ap-hl-btn.btn-whatsapp:hover {
+  background: #1ebd5a;
+}
+
+.ap-hl-btn.btn-orange {
+  background: #ea580c;
+  color: #ffffff;
+}
+
+.ap-hl-btn.btn-orange:hover {
+  background: #c2410c;
+}
+
+/* 3. Benefits Grid */
+.ap-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.ap-benefit-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 22px 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ap-benefit-icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.ap-benefit-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #111827;
+  margin: 0 0 8px;
+}
+
+.ap-benefit-desc {
+  font-size: 12.5px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0 0 14px;
+  flex: 1;
+}
+
+.ap-benefit-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #15803d;
+}
+
+/* 712 Banner */
+.ap-712-banner {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.banner-shield {
+  font-size: 28px;
+}
+
+.ap-712-banner strong {
+  font-size: 14px;
+  color: #14532d;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.ap-712-banner p {
+  font-size: 12.5px;
+  color: #166534;
+  margin: 0;
+}
+
+/* 4. FAQs */
+.ap-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 840px;
+  margin: 0 auto 36px;
+}
+
+.ap-faq-item {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ap-faq-question {
+  width: 100%;
+  padding: 14px 18px;
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  cursor: pointer;
+}
+
+.ap-faq-question:hover {
+  color: #15803d;
+}
+
+.faq-toggle-arrow {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.ap-faq-answer {
+  padding: 0 18px 14px;
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.6;
+  border-top: 1px solid #f8fafc;
+}
+
+/* Help Callout */
+.ap-help-callout {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.callout-q {
+  font-size: 17px;
+  font-weight: 800;
+  color: #111827;
+  margin: 0 0 4px;
+}
+
+.callout-p {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0 0 16px;
+}
+
+.callout-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-call-helpline {
+  background: #15803d;
+  color: #ffffff;
+  padding: 9px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn-wa-helpline {
+  background: #25d366;
+  color: #ffffff;
+  padding: 9px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .ap-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ap-helpline-grid,
+  .ap-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
